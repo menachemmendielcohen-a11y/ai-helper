@@ -1,0 +1,28 @@
+{
+  "name": "ai-site-editor-pro",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "server": "node server.js",
+    "server:dev": "cross-env NODE_ENV=development node server.js",
+    "dev:all": "concurrently \"npm run server:dev\" \"npm run dev\"",
+    "start": "node server.js",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "express": "latest",
+    "cors": "latest",
+    "dotenv": "latest",
+    "concurrently": "latest",
+    "cross-env": "^7.0.3",
+    "jszip": "^3.10.1"
+  },
+  "devDependencies": {}
+}
